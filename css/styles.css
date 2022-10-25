@@ -1,0 +1,21 @@
+.carousel-inner {
+    filter: brightness(70%);
+}
+
+.carousel-caption {
+    background-color: rgb(41, 23, 1, 0.75);
+}
+
+.card-body {
+    text-align: justify;
+    align-items: center;
+}
+
+.list-unstyled {
+    background-color: rgb(41, 23, 1, 0.75);
+}
+
+.display-6 {
+    background-color: rgb(41, 23, 1, 0.75);
+    text-align: center;
+}

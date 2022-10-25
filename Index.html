@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Pagina_principal" content="Pagina_principal de pueba de lo aprendido en Codo a Codo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Historia de España</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="Img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+  <!-- Cabecera -->
+    <header class="p-3 text-bg-dark fixed-top">
+        <div class="container-fluid" class="sticky-top">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mb-2">
+                <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <img src="Img/Logo Filo-UBA.png" width="60" height="60" role="img" aria-label="Logo Instituto de Historia de españa">
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="index.html" class="nav-link px-2 text-secondary" aria-label="Página Principal">Página Principal</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Proximamente</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Quienes Somos</a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Buscar">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Acceso">Acceso</button>
+                  <button type="button" class="btn btn-success" aria-label="Registrarse">Registrarse</button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg bg-light overflow:auto">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">Vínculos de Interés</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contenido Histórico
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Historia Antigua</a></li>
+                    <li><a class="dropdown-item" href="#">Historia Medieval</a></li>
+                    <li><a class="dropdown-item" href="#">Historia Moderna</a></li>
+                    <li><a class="dropdown-item" href="#">Historia Contemporánea</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Guerra Civil Española</a></li>
+                    <li><a class="dropdown-item" href="#">Segunda Guerra Mundial</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Publicaciones
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Investigaciones</a></li>
+                    <li><a class="dropdown-item" href="#">Revista del Instituto</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Podcast del IHE</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Archivo
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Documentos Históricos</a></li>
+                    <li><a class="dropdown-item" href="#">Archivo Fotográfico</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Archivo cultural</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- Barra Lateral -->
+    <aside>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Vínculos e Información de Interés</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Aquí encontrarás toda la información relacionada a institutos de investigación, universidades y otros datos de interés.</p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Instituciones de Investigación
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Academias
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Páginas de Divulgación
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Carrusel -->
+    <section class="mb-5">
+      <div id="carouselExampleCaptions" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="Img/Mapa España 1.jpeg" class="d-block w-100" alt="10" height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cartografía Histórica</h5>
+              <p>Colección de Mapas Históricos y análisis de migraciones</p>
+              <button type="button" class="btn btn-light" aria-label="Ver Publicación">Ver Publicación</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="Img/historia-de-espana-momentos-1.jpg" class="d-block w-100" alt="10" height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reconquista Española</h5>
+              <p>Expansión de la corona española en la península. Expulsión de los moros.</p>
+              <button type="button" class="btn btn-light" aria-label="Ver Publicación">Ver Publicación</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="Img/Conquista de América.jpg" class="d-block w-100" alt="10" height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>La conquista de América</h5>
+              <p>La hegemonía española luego del primer encuentro.</p>
+              <button type="button" class="btn btn-light" aria-label="Ver Publicación">Ver Publicación</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Contenido -->
+    <section class="mb-5">
+      <div class="container fluid">
+        
+       
+      </div>  
+    </section>
+    <!-- Tarjetas de Publicaciones -->
+    <section class="mb-5">
+      <div class="container px-4 py-5" id="Publicaciones Destacadas" aria-label="Publicaciones Destacadas">
+        <h2 class="pb-2 border-bottom">Publicaciones Destacadas</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card mb-2" style="width: 18rem;">
+                <img src="Img/reyes-catc3b3licos2.jpg" class="card-img-top" alt="..." height="255px">
+                <div class="card-body">
+                  <h5 class="card-title">Reyes Católicos</h5>
+                  <p class="card-text">La investigación versa sobre el período de gobierno de los Reyes Católicos, en el migraciones
+                  del expansionismo español, como parte de un reordenamiento de la elite encolumnados en un solo bloque tras la 
+                  monarquía para derrotar a la poderosa satrapía de Granada.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Palabras clave: reyes católicos, monarquía, imperialismo</li>
+                  <li class="list-group-item">Páginas: 31</li>
+                  <li class="list-group-item">Autoría: Rodríguez Otero</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Ver artículo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-2" style="width: 18rem;">
+                <img src="Img/Reconquista 1492.jpeg" class="card-img-top" alt="..." height="255px">
+                <div class="card-body">
+                  <h5 class="card-title">La Reconquista Ibérica</h5>
+                  <p class="card-text">El presente articulo aborda la controversia en relación a la definición 
+                  de Reconquista aplicada desde la historiografía española. A través del mismo s epuede vislumbrar el rol de
+                  lla intelectualidad en la cosntrucción de un imaginario nacional</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Palabras clave: Reconquista, Reyes católicos, Explotación</li>
+                  <li class="list-group-item">Páginas: 52</li>
+                  <li class="list-group-item">Autoría: José Luis Romero</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Ver artículo</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-2" style="width: 18rem;">
+                <img src="Img/Reconquista 1492.jpeg" class="card-img-top" alt="..." height="255px">
+                <div class="card-body">
+                  <h5 class="card-title">La Reconquista Ibérica</h5>
+                  <p class="card-text">El presente articulo aborda la controversia en relación a la definición 
+                  de Reconquista aplicada desde la historiografía española. A través del mismo s epuede vislumbrar el rol de
+                  lla intelectualidad en la cosntrucción de un imaginario nacional</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Palabras clave: Reconquista, Reyes católicos, Explotación</li>
+                  <li class="list-group-item">Páginas: 52</li>
+                  <li class="list-group-item">Autoría: José Luis Romero</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Ver artículo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Otras Publicaciones -->
+        <div class="container px-4 py-5" id="Publicaciones Temáticas">
+          <h2 class="pb-2 border-bottom">Publicaciones Temáticas</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+              </div>
+              <div>
+                <h3 class="fs-2">Las reformas Toledanas</h3>
+                <p>Análisis sobre las reformas toledanas y su impacto a nivel regional en las colonias americanas. 
+                  Negociaciones y resistencias, beneficiados y explotados.</p>
+                <a href="#" class="btn btn-primary">
+                  Ver Artículo
+                </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+              </div>
+              <div>
+                <h3 class="fs-2">Batalla de Trafalgar</h3>
+                <p>Recopilación histórica de fuentes relacionadas a la gran batalla entre las potencias de la época. 
+                  El ocaso de España u el dominio marítimo de Gran Bretaña.</p>
+                <a href="#" class="btn btn-primary">
+                  Ver Artículo
+                </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+              </div>
+              <div>
+                <h3 class="fs-2">Arte Colonial</h3>
+                <p>Recorrido histórico por el arte colonial. El impacto de diversas corrientes en la Península. 
+                  Tendencias, sincretismos y resistencias. Arte de elite y popular.</p>
+                <a href="#" class="btn btn-primary">
+                  Ver Artículo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </section>
+    <!-- Tarjeta de Actividad Desatacada -->
+    <section class="mb-5">
+        <div class="container px-4 py-5" id="custom-cards">
+          <h2 class="pb-2 border-bottom">Actividad Destacada</h2>
+          <div class="card mb-3 text-bg-secondary container">
+            <div class="row">
+              <div class="col">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/V1j9E2k1qf8" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6 ms-4">
+                <div class="card-body">
+                  <h5 class="card-title">Presentación Libro "La Armada de Barlovento"</h5>
+                  <p class="card-text">Actividad de lanzamiento del nuevo libro de investigación histórica. La misma estuvo a cargo 
+                    del Instituto de Historia de España, contando con su autora María Josefina Lartia; con la
+                    cual se realizó una entrevista.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      <!-- Otras Actividades -->
+      <div class="container px-4 py-5" id="Próximas Actividades">
+        <h2 class="pb-2 border-bottom">Próximas Actividades</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(Img/Guerra-civil-espanola.jpg);">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold">Debates sobre la Guerra Civil Española</h3>
+                <ul class="d-flex list-unstyled mt-auto">                  
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <medium><b>IHES</b></medium>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="&#xF1E4"/></svg> 
+                    <medium><b>20-Oct-22</b></medium>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="&#xF1E4"/></svg> 
+                    <medium><b>19:00 hs</b></medium>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(Img/Trienio\ Liberal.jpg);">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold">El trienio liberal</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                    <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <medium><b>Ex ESMA</b></medium>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <medium><b>30-Nov-22</b></medium>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <medium><b>15:00 hs</b></medium>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(Img/Anarquismo\ España-Guerra\ Civil.jpg);">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold">Anarquismo en España</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                    <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <medium><b>CCK</b></medium>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <medium><b>12-Dic-22</b></medium>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <medium><b>17:00 hs</b></medium>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- Pie de pagina -->
+    <footer>
+      <div class="container-fluid">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Contenido Histórico</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Publicaciones</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Archivo</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form novalidate>
+                <h5>Suscribite a nuestro Newsletter</h5>
+                <p>Mensualmente recibirás información acerca de las actividades y publicaciones del Instituto de Historia de España.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Ingrese dirección de mail">
+                  <button class="btn btn-primary" type="button">Suscribirse</button value="" required>
+                    <div class="invalid-feedback">
+                      Ingrese un mail.
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>    
+
+          <div class="Row">
+            <div class="col-md-6">
+              <h5>Ubicación</h5>
+              <ul class="nav flex-column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.852286619587!2d-58.370623!3d-34.6050953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x694d65ef05ded6ea!2sInstituto%20de%20Historia%20de%20Espa%C3%B1a%20%22Claudio%20S%C3%A1nchez-Albornoz%22!5e0!3m2!1ses-419!2sar!4v1665528474380!5m2!1ses-419!2sar" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </ul>
+            </div>
+                        
+            <div class="col-md-6">
+              <h5>Datos de Contacto</h5>
+              <ul class="nav flex-column">
+                <p>Dirección: 25 de Mayo 221, 3º piso. Ciudad Autónoma de Buenos Aires<br>
+                Código Postal: C1041<br>
+                Teléfono: 5287-2628<br>
+                Correo Electrónico: ihespana@filo.uba.ar</p>
+                </ul>
+            </div>
+          </div>     
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022. Programando Historia - Desarrollo propio</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><img src="Img/twitter.svg" width="24" height="24"></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><img src="Img/instagram.svg" width="24" height="24"></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://es-la.facebook.com/institutohistoriaespana/" target="_blank"><img src="Img/facebook.svg" class="bi" width="24" height="24"></a></li> 
+            </ul>
+          </div>
+        </footer>      
+      </div>          
+    </footer>
+  </body>
+</html>
